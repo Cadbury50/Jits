@@ -1,0 +1,545 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}    
+.cage{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 100%;
+    /* border: 2px solid rgb(20, 3, 119); */
+}
+.div2-cage{
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    max-width:  750px;
+    height: 100%;
+    /* border: 2px solid rgb(20, 3, 119); */
+}
+.div2-cage2{
+    position: relative;
+    margin-left: 0;
+    margin-right: auto;
+    max-width:  750px;
+    height: 100%;
+    /* border: 2px solid rgb(20, 3, 119); */
+}
+
+.nav .nav-ul{
+    display:flex;
+    justify-content: flex-end;
+    padding: 8px 0;
+    /* border: 3px solid violet; */
+}
+.nav .nav-ul li{
+    /* border: 2px solid yellow; */
+    padding: 10px 25px;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.nav .nav-ul li a{
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    /* border: 2px solid blue; */
+    font-family: 'Open Sans',sans-serif;
+    color: #8c6239;
+   
+}
+.nav .nav-ul li .active{
+    color: #2C2416;
+    letter-spacing: 1px;
+    
+}
+
+.nav .nav-ul li a:hover:not(.active){
+    letter-spacing: 1px;
+
+    transition: .3s;
+    color: #BAA378;
+}
+
+.header{
+    width: 100%;
+    height: 310px;
+    background-image: radial-gradient(circle, #9a703f 25%, #7c5430);
+}
+.logo{
+    position: absolute;
+    z-index: 1;
+    top:-50px;
+    left: -50px;
+
+}
+.milktea{
+    position: absolute;
+    right: 320px;
+    top: 55px;
+}
+.carbonara{
+    position: absolute;
+    right: 120px;
+    top: 60px;
+}
+.header-text{
+    position: absolute;
+    font-family: 'Open Sans',sans-serif;
+    color:white;
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    top: 100px;
+    left: 50px;
+
+}
+.line{
+    position: absolute;
+    border-top: 6px solid #db8932;
+    width: 80px;
+    top: 160px;
+    left: 205px;
+}
+.tuna{
+    position: absolute;
+    font-family: 'Open Sans',sans-serif;
+    color:white;
+    font-size: 28px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    top: 190px;
+    left: 50px;
+}
+.div1{
+    position: relative;
+    background-image: radial-gradient(circle, #121312, #222222);
+    width: 100%;
+    height: 190px;
+    
+}
+.guess{
+    position: absolute;
+    top: 15px;
+    left: 100px;
+}
+.guess1{
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    text-shadow: 4px 4px 15px black  ;
+    color: white;
+    font-family: "helv children";
+    font-size: 4em;
+}
+
+
+.click{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'open sans', sans-serif;
+    padding: 0px 30px;
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px black;
+    background-color: transparent;
+    top: 110px;
+    right: 170px;
+    z-index: 0;
+    overflow: hidden;
+    
+    /* border: 2px solid blue; */
+}
+.click::after {
+    right: 100%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    top:auto;
+    height: 100%;
+    background-color: white;
+    width: 0;
+    transition: .3s ease;
+
+}
+.click:hover::after{
+    right: 0;
+    width: 100%;
+    transition: .4s ease;
+    
+}
+.click:hover{   /*s*/
+    border-color: black;
+    color: black;
+    transition: .4s ease;
+}
+
+
+
+.gallery{
+    position: relative;
+    width: 100%;
+    height: 320px;
+}
+.arrowLeft, .arrowRight{
+    position: absolute;
+    padding: 3px 15px;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    cursor: pointer;
+    border-radius: 25%;
+}
+.arrowLeft{
+    left: 4px;
+    top: 50%;
+    margin-top: -15px;
+}
+.arrowRight{
+    right: 8px;
+    top: 50%;
+    margin-top: -15px;
+}
+.arrowLeft:hover, .arrowRight:hover{
+    background-color: white;
+    color:black;
+    transition: .5s;
+}
+.row{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+}
+.row2{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+}
+
+
+.gallery-img{
+    width: 25%;
+
+}
+.div11{
+    position: relative;    
+    width: 100%;
+    height: 310px;
+    background-image: radial-gradient(circle, #9a703f 25%, #7c5430);
+}
+.tunaHeader{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+}
+.tunaDefinition{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+}
+.sandwich-container{
+    position: absolute;
+    right: 80px;
+    top: 20px;
+}
+
+
+.seeText1 .seetextA{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    padding: 17px 30px;
+    border: 2px solid white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    top: 200px;
+    left: 180px;
+    z-index: 0;
+}
+.seetextA::after {
+    content: '';
+    
+    right: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    top:auto;
+    height: 100%;
+    background-color: white;
+    width: 0;
+    transition: .3s ease;
+
+}
+.seetextA:hover::after{
+    right: 0;
+    width: 100%;
+    transition: .4s ease;
+    
+}
+.seetextA:hover{ /*s*/
+    border-color: #704616;
+    color: #704616;
+    transition: .4s ease;
+}
+.div2{
+    display: flex;
+    width: 100%;
+    height: 450px;
+}
+.img-container{
+    background-image: url(../img/milktea1.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.img-container2{
+    background-image: url(../img/carbonara1..jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.div2-text,.div2-text2{
+    font-family: "Fontrust";
+    font-size: 3.5em;
+    text-shadow:-1px -1px 0 white,
+                1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white;
+}
+
+/* position of text */
+.div2-text, .div2-text2{
+    position: absolute;
+}
+
+
+.button-text{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    display: block;
+    text-align: center;
+    border: 3px solid black;
+    padding: 16px 50px;
+    z-index: 0;
+}
+.button-text::after {   /* plain na slide effect */
+    content: '';
+    
+    right: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    top:auto;
+    height: 100%;
+    background-color: white;
+    width: 0;
+    transition: .3s ease;
+
+}
+.button-text:hover::after{      /* slide effect kapag nag hover*/
+    right: 0;
+    width: 100%;
+    transition: .4s ease;
+    
+}
+.button-text:hover{         /*hover effect ng mismong text*/
+    border-color: #704616;
+    color: #704616;
+    transition: .4s ease;
+}
+.div3{
+    position: relative;    
+    width: 100%;
+    height: 310px;
+    background-image: radial-gradient(circle, #9a703f 25%, #7c5430);
+}
+.matcha{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 65px;
+    right: 320px;
+}
+.matchaDefinition{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    position: absolute;
+    top: 110px;
+    right: 155px;
+}
+.matcha-container{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+
+.seeText2 .seetextB{
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    padding: 17px 30px;
+    border: 2px solid white;
+    right: 160px;
+    bottom: 40px;
+    z-index: 0;
+}
+.seetextB::after {
+    content: '';
+    
+    right: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    top:auto;
+    height: 100%;
+    background-color: white;
+    width: 0;
+    transition: .3s ease;
+
+}
+.seetextB:hover::after{
+    right: 0;
+    width: 100%;
+    transition: .4s ease;
+    
+}
+.seetextB:hover{ /*s*/
+    border-color: #704616;
+    color: #704616;
+    transition: .4s ease;
+}
+.div4{
+    position: relative;
+    width: 100%;
+    height: 378px;
+    background-color: #d0dcde;
+}
+.storeImg{
+    position: absolute;
+    z-index: 5;
+    width: 50%;
+    height: 379px;
+    right: 0px;
+}
+.franchising{
+    color: #7c5430;
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    font-family: 'open sans', sans-serif;
+    font-size: 2em;
+}
+.franchisingItalic{
+    color: #7c5430;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    font-family: 'open sans', sans-serif;
+    font-size: 1em;
+}
+
+.franchiseText{
+    position: absolute;
+    padding: 15px 30px;
+    top: 170px;
+    left: 170px;
+    border: 2px solid #7c5430;
+    color: #7c5430;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    z-index: 0;
+    text-decoration: none;
+}
+.franchiseText::after {   /* plain na slide effect */
+    content: '';    
+    right: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    top:auto;
+    height: 100%;
+    background-color: #704616;
+    width: 0;
+    transition: .3s ease;
+
+}
+.franchiseText:hover::after{      /* slide effect kapag nag hover*/
+    right: 0;
+    width: 100%;
+    transition: .4s ease;
+    
+}
+.franchiseText:hover{         /*hover effect ng mismong text*/
+    border-color: white;
+    color: white;
+    transition: .4s ease;
+}
+.div5{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #979797;
+    
+}
+.iconContainer{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.iconContainer a{
+    margin: 0 8px;
+}
+.div6{
+    width: 100%;
+    height: 50px;
+}
+.lastairbender{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+}
+.lastairbender li{
+    margin: 0 9px;
+}
+.lastairbender li a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Open Sans',sans-serif;
+}
+.footer{
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    margin: 0 auto;
+    font-size: 10px;
+}
+ul li a:hover{
+    color: rgb(145, 82, 0);
+}
